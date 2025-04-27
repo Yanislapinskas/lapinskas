@@ -1,4 +1,4 @@
-# проверка (quasar-project)
+# нет ли фи (quasar-project)
 
 A Quasar Project
 
