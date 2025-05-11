@@ -1,4 +1,7 @@
 <template>
+  <h1>
+	Бесплатная доставка
+  </h1>
   <div class="row q-gutter-md">
     <q-card class="col-4" style="height: 200px;">
       <q-img 
