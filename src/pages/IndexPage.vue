@@ -3,17 +3,29 @@
 	Бесплатная доставка
   </h3>
   <div class="row q-ma-xs">
-    <q-card v-for="(image,index) in images" :key="index" class="col-4" style="height: 200px;">
-      <q-img 
-        height="100%"
-        :src="image"
-      >
-        <div class="absolute-bottom text-h6">
-          Title {{index}}
-        </div>
-      </q-img>
-    </q-card>
-	
+  
+    <q-carousel
+      v-model="slide"
+      transition-prev="slide-right"
+      transition-next="slide-left"
+      animated
+      control-color="primary"
+      class="rounded-borders"
+    >
+      <q-carousel-slide v-for="(image,index) in images" :key="index" name="style" class="column no-wrap flex-center">
+	  
+		<q-card  class="col-4" style="height: 200px;">
+		  <q-img 
+			height="100%"
+			:src="image"
+		  >
+			<div class="absolute-bottom text-h6">
+			  Title {{index}}
+			</div>
+		  </q-img>
+		</q-card>
+	  </q-carousel-slide>
+    </q-carousel>
   </div>
 </template>
 
