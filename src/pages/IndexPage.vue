@@ -7,18 +7,24 @@
         transition-prev="slide-right"
         transition-next="slide-left"
         animated
-        control-color="primary"
+        arrows
         navigation
-        class="rounded-borders"
+        control-color="primary"
+        class="rounded-borders full-width"
         height="300px"
       >
         <q-carousel-slide
           v-for="(img, index) in images"
           :key="index"
           :name="index"
-          class="column no-wrap flex-center"
+          class="column no-wrap flex-center bg-grey-2"
         >
-          <q-img :src="img" :alt="'Slide ' + index" style="max-height: 100%; max-width: 100%;" />
+          <q-img
+            :src="img"
+            :alt="'Slide ' + index"
+            style="max-height: 100%; max-width: 100%;"
+            spinner-color="primary"
+          />
         </q-carousel-slide>
       </q-carousel>
     </div>
@@ -29,10 +35,10 @@
 import { ref } from 'vue';
 
 const images = ref([
-  "https://avatars.mds.yandex.net/get-eda/2353725/2dc822395bf1d344702e8626e1f7a44f/400x400nocrop",
-  "https://avatars.mds.yandex.net/get-feeds-media/5396768/847c53e4539489421bfdfe803b4385ac78dbbddb/orig",
-  "https://placekitten.com/400/300", // дополнительное для теста
+  "https://placekitten.com/600/300",
+  "https://placekitten.com/601/300",
+  "https://placekitten.com/602/300",
 ]);
 
-const slide = ref(0); // используем index как name
+const slide = ref(0);
 </script>
