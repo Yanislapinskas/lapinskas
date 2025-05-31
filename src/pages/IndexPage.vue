@@ -35,9 +35,9 @@
 import { ref } from 'vue';
 
 const images = ref([
-  "https://placekitten.com/600/300",
-  "https://placekitten.com/601/300",
-  "https://placekitten.com/602/300",
+  "https://avatars.mds.yandex.net/get-eda/2353725/2dc822395bf1d344702e8626e1f7a44f/400x400nocrop",
+  "https://avatars.mds.yandex.net/get-feeds-media/5396768/847c53e4539489421bfdfe803b4385ac78dbbddb/orig",
+  "https://placekitten.com/400/300",
 ]);
 
 const slide = ref(0);
