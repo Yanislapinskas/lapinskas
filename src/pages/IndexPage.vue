@@ -3,24 +3,39 @@
     <h3 class="q-ma-xs">Бесплатная доставка</h3>
     <div class="row q-ma-xs">
       <q-carousel
-        v-model="slide"
-        transition-prev="slide-right"
-        transition-next="slide-left"
-        animated
-        control-color="primary"
-        class="rounded-borders"
-        height="300px" 
-        arrows 
-        navigation 
-      >
-        <q-carousel-slide
-          v-for="(image, index) in images"
-          :key="index"
-          :name="index"
-        >
-          <q-img :src="image" class="fit" />
-        </q-carousel-slide>
-      </q-carousel>
+      v-model="slide"
+      transition-prev="slide-right"
+      transition-next="slide-left"
+      animated
+      control-color="primary"
+      class="rounded-borders"
+    >
+      <q-carousel-slide name="style" class="column no-wrap flex-center">
+        <q-icon name="style" color="primary" size="56px" />
+        <div class="q-mt-md text-center">
+          {{ lorem }}
+        </div>
+      </q-carousel-slide>
+      <q-carousel-slide name="tv" class="column no-wrap flex-center">
+        <q-icon name="live_tv" color="primary" size="56px" />
+        <div class="q-mt-md text-center">
+          {{ lorem }}
+        </div>
+      </q-carousel-slide>
+      <q-carousel-slide name="layers" class="column no-wrap flex-center">
+        <q-icon name="layers" color="primary" size="56px" />
+        <div class="q-mt-md text-center">
+          {{ lorem }}
+        </div>
+      </q-carousel-slide>
+      <q-carousel-slide name="map" class="column no-wrap flex-center">
+        <q-icon name="terrain" color="primary" size="56px" />
+        <div class="q-mt-md text-center">
+          {{ lorem }}
+        </div>
+      </q-carousel-slide>
+    </q-carousel>
+
     </div>
   </div>
 </template>
