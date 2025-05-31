@@ -1,5 +1,5 @@
 <template>
-  <div> <!-- Добавлен корневой элемент -->
+  <div>
     <h3 class="q-ma-xs">Бесплатная доставка</h3>
     <div class="row q-ma-xs">
       <q-carousel
@@ -9,9 +9,9 @@
         animated
         control-color="primary"
         class="rounded-borders"
-        height="300px" <!-- Добавлен фиксированный размер -->
-        arrows <!-- Добавлены стрелки -->
-        navigation <!-- Добавлены точки навигации -->
+        height="300px" 
+        arrows 
+        navigation 
       >
         <q-carousel-slide
           v-for="(image, index) in images"
@@ -34,5 +34,5 @@ const images = ref([
   // Можно добавить другие уникальные изображения
 ]);
 
-const slide = ref(0);
+const slide = ref(0	);
 </script>
