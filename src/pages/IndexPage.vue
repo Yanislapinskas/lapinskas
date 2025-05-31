@@ -35,7 +35,7 @@
         </div>
       </q-carousel-slide>
     </q-carousel>
-
+const slide = ref(0 );
     </div>
   </div>
 </template>
@@ -49,5 +49,5 @@ const images = ref([
   // Можно добавить другие уникальные изображения
 ]);
 
-const slide = ref(0	);
+const lorem = ref("test");
 </script>
