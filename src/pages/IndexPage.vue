@@ -39,8 +39,6 @@
       </q-carousel-slide>
     </q-carousel>
 
-
-const slide = ref(0 );
     </div>
   </div>
 </template>
@@ -51,8 +49,7 @@ import { ref } from 'vue';
 const images = ref([
   "https://avatars.mds.yandex.net/get-eda/2353725/2dc822395bf1d344702e8626e1f7a44f/400x400nocrop",
   "https://avatars.mds.yandex.net/get-feeds-media/5396768/847c53e4539489421bfdfe803b4385ac78dbbddb/orig",
-  // Можно добавить другие уникальные изображения
 ]);
-
-const lorem = ref("test");x
+const slide = ref(0 );
+const lorem = ref("test");
 </script>
