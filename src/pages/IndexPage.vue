@@ -37,5 +37,5 @@ const images = ref([
 "https://avatars.mds.yandex.net/get-eda/2353725/2dc822395bf1d344702e8626e1f7a44f/400x400nocrop",
 "https://avatars.mds.yandex.net/get-eda/2353725/2dc822395bf1d344702e8626e1f7a44f/400x400nocrop",
 ])
-const slide = ref(0s)
+const slide = ref(0)
 </script>
