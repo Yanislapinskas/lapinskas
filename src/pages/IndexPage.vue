@@ -45,7 +45,6 @@ const slides = ref([
   { id: 4, title: 'Слайд 4', image: 'https://avatars.mds.yandex.net/get-feeds-media/5396768/847c53e4539489421bfdfe803b4385ac78dbbddb/orig'  },
 ]);
 
-const slide = ref(0);
 </script> 
 
 <style scoped>
