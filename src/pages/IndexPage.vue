@@ -5,8 +5,8 @@
 		<Swiper
 		  :slides-per-view="1"
 		  :space-between="20"
-		  :navigation="true"
-		  :pagination="{ clickable: true }"
+		  navigation
+		  pagination
 		  :breakpoints="{
 			640: { slidesPerView: 1 },
 			768: { slidesPerView: 2 },
@@ -28,15 +28,10 @@
 </template>
 
 <script setup>
-import { ref } from 'vue';
 import { Swiper, SwiperSlide } from 'swiper/vue'
 import 'swiper/css'
 import 'swiper/css/navigation'
 import 'swiper/css/pagination'
-
-import SwiperCore, { Navigation, Pagination } from 'swiper'
-
-SwiperCore.use([Navigation, Pagination])
 
 const slides = ref([
   { id: 1, title: 'Слайд 1', image: 'https://avatars.mds.yandex.net/get-eda/2353725/2dc822395bf1d344702e8626e1f7a44f/400x400nocrop'  },
